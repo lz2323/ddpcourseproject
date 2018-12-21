@@ -9,6 +9,7 @@ shinyUI(fluidPage(
        p('Type in sepal length, sepal width, petal length, and petal width, 
           then click "submit" button to predict.'),
        p('The submit point will be shown in the following plots as a black triangle after submit.'),
+       tagList('For more info and instruction, please see', a('here',  href = 'https://lz2323.github.io/ddpcourseproject/')),
        numericInput('sl', 'Sepal Length in cm', value = 0, min = 0),
        numericInput('sw', 'Sepal Width in cm', value = 0, min = 0),
        numericInput('pl', 'Petal Length in cm', value = 0, min = 0),
